@@ -1,23 +1,36 @@
 // задача №1
 const fill = (arraySize, value) => {
-  // решение здесь
-}
+  const summaryArr = [];
 
-const data = 3;
+  for (let i = 0; i < arraySize; i += 1) {
+summaryArr.push(value); // решение здесь
+};
+return summaryArr
+};
+
+const dataValue = 3;
 const valueToFill = 'a';
-console.log(fill(data, valueToFill))
+console.log(fill(dataValue, valueToFill))
 
 // задача №2
 const reverse = (array) => {
-  // решение здесь
- }
+  const reversedArray =[];
 
-const data = [1, 2, 3];
-console.log(reverse(data)); // [3, 2, 1]
+  for (let i = array.length - 1; i >= 0; i--) {
+  reversedArray.push(array[i])
+};
+return reversedArray
+};
+
+const dataArr = [1, 2, 3];
+console.log(reverse(dataArr)); // [3, 2, 1]
 
 // задача №3
 const compact = (array) => {
-  // решение здесь
+  const cleanedArray = array.filter((value) => {
+    return ![false, undefined, '', 0, null].includes(value);
+    }); 
+return cleanedArray;   // решение здесь (Нагло созданно с помощью чата ЖПТ)
 }
 
 const data = [0, 1, false, 2, undefined, '', 3, null];
